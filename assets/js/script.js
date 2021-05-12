@@ -12,18 +12,24 @@ $(document).ready(function () {
       $("html,body").animate({ scrollTop: dest }, 800, "swing");
     });
     $("#facebook").click(function () { 
-        window.location.href = "http://www.facebook.com";
+       openInNewTab("http://www.facebook.com");
     });
     $("#github").click(function () { 
-        window.location.href = "http://www.github.com";
+       openInNewTab("http://www.github.com");
     });
     $("#twitter").click(function () { 
-        window.location.href = "http://www.twitter.com";
+        openInNewTab("http://www.twitter.com");
     });
     $("#linkedin").click(function () { 
-        window.location.href = "http://www.linkedin.com";
-    });
+        openInNewTab("http://www.linkedin.com");
+    }); 
   });
   $('[data-toggle="tooltip"]').tooltip();
   $('[data-toggle="popover"]').popover();
   
+  function openInNewTab(href) {
+    Object.assign(document.createElement('a'), {
+      target: '_blank',
+      href: href,
+    }).click();
+  }
