@@ -1,0 +1,25 @@
+.bgBlack{
+    background-color: black;
+}
+.img-top{
+    height: 166px;
+}
+@media (max-width: 576px){
+    .img-top{
+      height: 200px;  
+    } 
+}
+/*Cambios generales en fuente y peso*/
+body{
+    font-family: "Open Sans";
+}
+.boldWeight{
+    font-weight: 600;
+}
+.lightWeight{
+    font-weight: 300;
+}
+
+hr{
+    border: 1;
+}
