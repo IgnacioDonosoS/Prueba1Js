@@ -2,6 +2,9 @@
 .bgBlack{
     background-color: black;
 }
+.bgColorCe{
+    background-color: #17A3B8;
+}
 /*asignacion de alto de las imagenes estandarizados para pantallas mobiles y para pantallas de más ancho*/
 .img-top{
     height: 166px;
