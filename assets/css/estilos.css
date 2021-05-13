@@ -1,6 +1,8 @@
+/*Clase para asignar fondo negro a lo largo del documento*/
 .bgBlack{
     background-color: black;
 }
+/*asignacion de alto de las imagenes estandarizados para pantallas mobiles y para pantallas de más ancho*/
 .img-top{
     height: 166px;
 }
@@ -9,7 +11,7 @@
       height: 200px;  
     } 
 }
-/*Cambios generales en fuente y peso*/
+/*Cambios generales en fuente y peso a lo largo del documento*/
 body{
     font-family: "Open Sans";
 }

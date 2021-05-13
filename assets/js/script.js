@@ -1,3 +1,4 @@
+//Jquery para smoothScrolling.
 $(document).ready(function () {
     $("a").click(function (event) {
       event.preventDefault();
@@ -11,6 +12,7 @@ $(document).ready(function () {
       //go to destination
       $("html,body").animate({ scrollTop: dest }, 800, "swing");
     });
+    // Funcionalidad a los iconos del footer para abrir los documentos en nuevas pestañas con la funcion openInNewTab.
     $("#facebook").click(function () { 
        openInNewTab("http://www.facebook.com");
     });
@@ -24,9 +26,11 @@ $(document).ready(function () {
         openInNewTab("http://www.linkedin.com");
     }); 
   });
+  // Agregados para darle funcionalidad a los tooltip y popovers
   $('[data-toggle="tooltip"]').tooltip();
   $('[data-toggle="popover"]').popover();
   
+  //función para tomar los click en los iconos de footer y abrir los enlaces en un nuevo tab.
   function openInNewTab(href) {
     Object.assign(document.createElement('a'), {
       target: '_blank',
